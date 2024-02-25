@@ -1,0 +1,90 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(90deg, #030124 0%, #090979 35%, #00d4ff 100%);
+    overflow-x: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.game-info{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 3rem;
+}
+
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.btn.active{
+    display: flex;
+}
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+.box7, .box8{
+    border-right: 2px solid white;
+}
+
+.win{
+    background-color: rgba(0, 0, 0, 0.395);
+}
+
+
+.creator{
+    color: white;
+    text-align: center;
+}
+.name{
+    color: #FFA500;
+    text-decoration: none;
+}
+.desc{
+    color: rgba(255, 255, 255, 0.651);
+    font-size: 14px;
+} 
